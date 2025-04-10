@@ -33,3 +33,14 @@ tailwind:
 http://localhost:3000
 
 VSCode Copilot: settings > chat.agent.enabled
+
+## Errors
+
+	pnpm run build
+	> Build error occurred
+	[Error: Failed to collect page data for /seed] { type: 'Error' }
+	ELIFECYCLE  Command failed with exit code 1.
+
+Solution:
+
+	pnpm approve-builds
