@@ -36,6 +36,8 @@ VSCode Copilot: settings > chat.agent.enabled
 
 ## Errors
 
+### Build Error
+
 	pnpm run build
 	> Build error occurred
 	[Error: Failed to collect page data for /seed] { type: 'Error' }
@@ -44,3 +46,11 @@ VSCode Copilot: settings > chat.agent.enabled
 Solution:
 
 	pnpm approve-builds
+
+### Vercel Deploy Build Error
+
+	[Error: Cannot find module '/vercel/path0/node_modules/.pnpm/bcrypt@5.1.1/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node'
+
+Solution:
+
+	Replace 'bcrypt' with 'bcryptjs'
